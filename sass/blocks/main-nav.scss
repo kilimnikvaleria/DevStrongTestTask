@@ -1,0 +1,132 @@
+.main-nav{
+  background-color: #efefef;
+}
+.main-nav__wrapper{
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav__catalog{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white;
+  width: 153px;
+  background-image: linear-gradient(to left, #0187c1, #3ac0ef);
+  padding: 18px 50px 17px 60px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 17px;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: 22px;
+    width: 18px;
+    height: 8px;
+    background-image: url("../images/icon-down.png");
+    background-repeat: no-repeat;
+  }
+  &:hover{
+    background-color: #009ee2;
+    background-image: none;
+  }
+
+  &:focus{
+    background-color: #009ee2;
+    background-image: none;
+  }
+}
+
+.main-nav__items{
+  @include list-reset();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 829px;
+  padding: 20px 9px 15px 9px;
+}
+
+.main-nav__item{
+  position: relative;
+  &:hover{
+    &::before{
+      content: '';
+      position: absolute;
+      left: 35%;
+      top: -20px;
+      border: 10px solid transparent;
+      border-top: 10px solid white;
+    }
+  }
+  &:focus{
+    &::before{
+      content: '';
+      position: absolute;
+      left: 35%;
+      top: -20px;
+      border: 10px solid transparent;
+      border-top: 10px solid white;
+    }
+  }
+}
+
+.main-nav__item a{
+  color: #1d1e1e;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  &:hover{
+    color: #009ee2;
+  }
+  &:focus{
+    color: #009ee2;
+  }
+}
+
+.percent-20{
+  &:hover{
+    &::before{
+      left: 20%;
+    }
+  }
+  &:focus{
+    &::before{
+      left: 20%;
+    }
+  }
+}
+.percent-30{
+  &:hover{
+    &::before{
+      left: 30%;
+    }
+  }
+  &:focus{
+    &::before{
+      left: 30%;
+    }
+  }
+}
