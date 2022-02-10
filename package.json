@@ -19,7 +19,7 @@
     "grunt-svgmin": "^5.0.0",
     "grunt-svgstore": "^1.0.0",
     "load-grunt-tasks": "^3.5.2",
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "build": "grunt build",
